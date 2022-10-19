@@ -75,4 +75,12 @@ function getColorsFromHash() {
     return []
 }
 
+function closeNotification() {
+    setTimeout(function () {
+        let notify = document.querySelector('.notification')
+        notify.style.opacity = '0'
+    }, 5000)
+}
+
+closeNotification()
 setColors(true)

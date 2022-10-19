@@ -1,7 +1,14 @@
+@import url('http://fonts.cdnfonts.com/css/roboto');
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.body {
+    position: relative;
 }
 
 .wrapper {
@@ -46,4 +53,17 @@
 
 .column h2:hover {
     background: rgba(0,0,0, .2);
+}
+
+.notification {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background: rgba(0, 0, 0, .3);
+    font-size: 32px;
+    color: #fff;
+    opacity: 1;
+    transition: opacity .325s ease;
 }
