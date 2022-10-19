@@ -70,7 +70,10 @@ function updateHash(colors = []) {
 
 function getColorsFromHash() {
     if (document.location.hash.length > 1) {
-        document.location.hash.substring(1).split('-').map(color => '#' + color)
+        return document.location.hash
+            .substring(1)
+            .split('-')
+            .map((color) => '#' + color)
     }
     return []
 }
